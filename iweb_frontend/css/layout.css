@@ -5,7 +5,13 @@
 	margin-right: auto;
 	border: 1px solid #000;
 }
+.container-fluid{      /*流式容器*/
+	display: block;
+	width: 100%;
+}
 .container:before,	/*使用内容生成，防止子元素margin溢出*/
+.container:after,
+.container-fluid:before,
 .container:after {
 	content: '';
 	display: table;
